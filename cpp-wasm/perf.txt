@@ -1,0 +1,22 @@
+# started on Thu Jul 11 23:15:43 2024
+
+
+ Performance counter stats for 'node main.out.js' (10 runs):
+
+            393.51 msec task-clock                       #    0.983 CPUs utilized               ( +-  2.25% )
+               111      context-switches                 #  282.079 /sec                        ( +- 27.51% )
+                 4      cpu-migrations                   #   10.165 /sec                        ( +- 47.99% )
+             2,347      page-faults                      #    5.964 K/sec                       ( +-  0.22% )
+     1,640,334,377      cycles                           #    4.169 GHz                         ( +-  2.23% )  (71.30%)
+        42,421,949      stalled-cycles-frontend          #    2.59% frontend cycles idle        ( +-  6.82% )  (71.60%)
+     4,948,640,849      instructions                     #    3.02  insn per cycle            
+                                                  #    0.01  stalled cycles per insn     ( +-  0.09% )  (71.35%)
+     1,348,837,073      branches                         #    3.428 G/sec                       ( +-  0.09% )  (71.58%)
+         3,008,831      branch-misses                    #    0.22% of all branches             ( +-  1.41% )  (71.68%)
+     1,776,101,028      L1-dcache-loads                  #    4.514 G/sec                       ( +-  0.18% )  (71.56%)
+         1,401,851      L1-dcache-load-misses            #    0.08% of all L1-dcache accesses   ( +-  1.98% )  (71.28%)
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+
+            0.4002 +- 0.0134 seconds time elapsed  ( +-  3.35% )
+

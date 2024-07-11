@@ -1,0 +1,22 @@
+# started on Thu Jul 11 23:15:59 2024
+
+
+ Performance counter stats for 'node index.js' (10 runs):
+
+            174.81 msec task-clock                       #    0.962 CPUs utilized               ( +-  4.01% )
+                29      context-switches                 #  165.892 /sec                        ( +- 18.20% )
+                 1      cpu-migrations                   #    5.720 /sec                        ( +- 64.64% )
+             2,282      page-faults                      #   13.054 K/sec                       ( +-  0.02% )
+       728,640,329      cycles                           #    4.168 GHz                         ( +-  3.99% )  (71.68%)
+        44,987,122      stalled-cycles-frontend          #    6.17% frontend cycles idle        ( +-  5.94% )  (71.68%)
+     3,094,851,502      instructions                     #    4.25  insn per cycle            
+                                                  #    0.01  stalled cycles per insn     ( +-  0.13% )  (71.16%)
+       348,240,852      branches                         #    1.992 G/sec                       ( +-  0.16% )  (71.57%)
+         2,751,817      branch-misses                    #    0.79% of all branches             ( +-  0.57% )  (71.71%)
+       524,789,751      L1-dcache-loads                  #    3.002 G/sec                       ( +-  0.96% )  (71.38%)
+         1,331,773      L1-dcache-load-misses            #    0.25% of all L1-dcache accesses   ( +-  2.39% )  (71.37%)
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+
+            0.1818 +- 0.0132 seconds time elapsed  ( +-  7.26% )
+

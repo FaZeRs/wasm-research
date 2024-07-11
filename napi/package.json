@@ -1,0 +1,15 @@
+{
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp --python=python3 rebuild",
+    "clean": "node-gyp --python=python3 clean",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.1.0"
+  }
+}

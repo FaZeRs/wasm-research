@@ -1,0 +1,22 @@
+# started on Thu Jul 11 23:16:17 2024
+
+
+ Performance counter stats for './main' (10 runs):
+
+            242.94 msec task-clock                       #    0.981 CPUs utilized               ( +-  2.46% )
+                22      context-switches                 #   90.557 /sec                        ( +- 29.36% )
+                 1      cpu-migrations                   #    4.116 /sec                        ( +- 47.73% )
+                74      page-faults                      #  304.601 /sec                        ( +-  0.30% )
+     1,013,754,676      cycles                           #    4.173 GHz                         ( +-  2.45% )  (71.24%)
+        28,258,937      stalled-cycles-frontend          #    2.79% frontend cycles idle        ( +-  7.45% )  (71.24%)
+     3,352,315,879      instructions                     #    3.31  insn per cycle            
+                                                  #    0.01  stalled cycles per insn     ( +-  0.04% )  (71.23%)
+       663,058,116      branches                         #    2.729 G/sec                       ( +-  0.06% )  (71.32%)
+         1,506,886      branch-misses                    #    0.23% of all branches             ( +-  0.48% )  (71.76%)
+       792,573,054      L1-dcache-loads                  #    3.262 G/sec                       ( +-  0.40% )  (71.83%)
+            73,601      L1-dcache-load-misses            #    0.01% of all L1-dcache accesses   ( +- 10.00% )  (71.39%)
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+
+           0.24764 +- 0.00689 seconds time elapsed  ( +-  2.78% )
+
