@@ -1,22 +1,22 @@
-# started on Mon Nov 25 17:16:21 2024
+# started on Mon Nov 25 17:20:36 2024
 
 
  Performance counter stats for './main' (10 runs):
 
-            229.61 msec task-clock                       #    0.995 CPUs utilized               ( +-  1.15% )
-                14      context-switches                 #   60.972 /sec                        ( +- 21.58% )
+            227.86 msec task-clock                       #    0.994 CPUs utilized               ( +-  0.47% )
+                16      context-switches                 #   70.218 /sec                        ( +- 53.38% )
                  0      cpu-migrations                   #    0.000 /sec                      
-                73      page-faults                      #  317.928 /sec                        ( +-  0.71% )
-       958,831,092      cycles                           #    4.176 GHz                         ( +-  1.15% )  (70.95%)
-        22,272,327      stalled-cycles-frontend          #    2.32% frontend cycles idle        ( +-  2.24% )  (71.07%)
-     3,352,820,757      instructions                     #    3.50  insn per cycle            
-                                                  #    0.01  stalled cycles per insn     ( +-  0.02% )  (71.51%)
-       662,807,839      branches                         #    2.887 G/sec                       ( +-  0.02% )  (71.83%)
-         1,492,261      branch-misses                    #    0.23% of all branches             ( +-  0.27% )  (71.83%)
-       784,847,461      L1-dcache-loads                  #    3.418 G/sec                       ( +-  0.04% )  (71.63%)
-            38,183      L1-dcache-load-misses            #    0.00% of all L1-dcache accesses   ( +-  4.66% )  (71.19%)
+                73      page-faults                      #  320.369 /sec                        ( +-  0.81% )
+       951,407,706      cycles                           #    4.175 GHz                         ( +-  0.45% )  (71.06%)
+        22,459,828      stalled-cycles-frontend          #    2.36% frontend cycles idle        ( +-  2.63% )  (71.06%)
+     3,351,246,350      instructions                     #    3.52  insn per cycle            
+                                                  #    0.01  stalled cycles per insn     ( +-  0.05% )  (71.32%)
+       662,463,642      branches                         #    2.907 G/sec                       ( +-  0.02% )  (71.81%)
+         1,491,876      branch-misses                    #    0.23% of all branches             ( +-  0.55% )  (72.00%)
+       785,835,043      L1-dcache-loads                  #    3.449 G/sec                       ( +-  0.10% )  (71.61%)
+            44,059      L1-dcache-load-misses            #    0.01% of all L1-dcache accesses   ( +- 14.87% )  (71.15%)
    <not supported>      LLC-loads                                                             
    <not supported>      LLC-load-misses                                                       
 
-           0.23070 +- 0.00258 seconds time elapsed  ( +-  1.12% )
+           0.22924 +- 0.00192 seconds time elapsed  ( +-  0.84% )
 

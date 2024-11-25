@@ -1,22 +1,22 @@
-# started on Mon Nov 25 17:16:06 2024
+# started on Mon Nov 25 17:20:20 2024
 
 
  Performance counter stats for 'bun index.ts' (10 runs):
 
-            587.50 msec task-clock                       #    1.005 CPUs utilized               ( +-  0.15% )
-               114      context-switches                 #  194.042 /sec                        ( +-  6.55% )
-                 3      cpu-migrations                   #    5.106 /sec                        ( +- 31.35% )
-             3,297      page-faults                      #    5.612 K/sec                       ( +-  0.03% )
-     2,449,267,549      cycles                           #    4.169 GHz                         ( +-  0.15% )  (71.53%)
-        24,486,275      stalled-cycles-frontend          #    1.00% frontend cycles idle        ( +-  1.76% )  (71.37%)
-    10,917,984,380      instructions                     #    4.46  insn per cycle            
-                                                  #    0.00  stalled cycles per insn     ( +-  0.05% )  (71.26%)
-     1,949,092,159      branches                         #    3.318 G/sec                       ( +-  0.07% )  (71.54%)
-         1,565,348      branch-misses                    #    0.08% of all branches             ( +-  2.27% )  (71.68%)
-     3,703,174,368      L1-dcache-loads                  #    6.303 G/sec                       ( +-  0.08% )  (71.49%)
-           952,123      L1-dcache-load-misses            #    0.03% of all L1-dcache accesses   ( +-  5.75% )  (71.43%)
+            592.02 msec task-clock                       #    1.006 CPUs utilized               ( +-  0.69% )
+               114      context-switches                 #  192.560 /sec                        ( +-  5.76% )
+                 4      cpu-migrations                   #    6.757 /sec                        ( +- 15.00% )
+             3,296      page-faults                      #    5.567 K/sec                       ( +-  0.04% )
+     2,467,099,805      cycles                           #    4.167 GHz                         ( +-  0.69% )  (71.56%)
+        27,712,092      stalled-cycles-frontend          #    1.12% frontend cycles idle        ( +- 11.90% )  (71.56%)
+    10,921,174,825      instructions                     #    4.43  insn per cycle            
+                                                  #    0.00  stalled cycles per insn     ( +-  0.05% )  (71.39%)
+     1,948,759,303      branches                         #    3.292 G/sec                       ( +-  0.04% )  (71.46%)
+         1,671,768      branch-misses                    #    0.09% of all branches             ( +-  3.58% )  (71.67%)
+     3,710,327,305      L1-dcache-loads                  #    6.267 G/sec                       ( +-  0.35% )  (71.40%)
+           972,942      L1-dcache-load-misses            #    0.03% of all L1-dcache accesses   ( +-  4.44% )  (71.27%)
    <not supported>      LLC-loads                                                             
    <not supported>      LLC-load-misses                                                       
 
-           0.58432 +- 0.00109 seconds time elapsed  ( +-  0.19% )
+           0.58827 +- 0.00399 seconds time elapsed  ( +-  0.68% )
 

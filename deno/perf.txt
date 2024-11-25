@@ -1,22 +1,22 @@
-# started on Mon Nov 25 17:16:11 2024
+# started on Mon Nov 25 17:20:26 2024
 
 
  Performance counter stats for 'deno --allow-env index.ts' (10 runs):
 
-            952.80 msec task-clock                       #    0.998 CPUs utilized               ( +-  0.23% )
-                86      context-switches                 #   90.260 /sec                        ( +-  8.03% )
-                 9      cpu-migrations                   #    9.446 /sec                        ( +-  7.04% )
-             4,543      page-faults                      #    4.768 K/sec                       ( +-  0.03% )
-     3,974,900,104      cycles                           #    4.172 GHz                         ( +-  0.23% )  (71.60%)
-        65,798,579      stalled-cycles-frontend          #    1.66% frontend cycles idle        ( +-  1.76% )  (71.62%)
-    17,193,803,322      instructions                     #    4.33  insn per cycle            
-                                                  #    0.00  stalled cycles per insn     ( +-  0.04% )  (71.62%)
-     3,671,892,832      branches                         #    3.854 G/sec                       ( +-  0.07% )  (71.53%)
-         3,389,038      branch-misses                    #    0.09% of all branches             ( +-  4.68% )  (71.22%)
-     6,429,692,292      L1-dcache-loads                  #    6.748 G/sec                       ( +-  0.08% )  (71.16%)
-         1,684,144      L1-dcache-load-misses            #    0.03% of all L1-dcache accesses   ( +-  1.60% )  (71.45%)
+            966.79 msec task-clock                       #    0.998 CPUs utilized               ( +-  0.46% )
+                71      context-switches                 #   73.439 /sec                        ( +-  2.55% )
+                10      cpu-migrations                   #   10.343 /sec                        ( +-  8.49% )
+             4,542      page-faults                      #    4.698 K/sec                       ( +-  0.03% )
+     4,033,744,219      cycles                           #    4.172 GHz                         ( +-  0.45% )  (71.45%)
+        68,854,004      stalled-cycles-frontend          #    1.71% frontend cycles idle        ( +-  1.47% )  (71.64%)
+    17,186,383,475      instructions                     #    4.26  insn per cycle            
+                                                  #    0.00  stalled cycles per insn     ( +-  0.04% )  (71.74%)
+     3,668,890,281      branches                         #    3.795 G/sec                       ( +-  0.05% )  (71.55%)
+         3,681,159      branch-misses                    #    0.10% of all branches             ( +-  1.40% )  (71.19%)
+     6,426,029,521      L1-dcache-loads                  #    6.647 G/sec                       ( +-  0.05% )  (71.28%)
+         3,734,065      L1-dcache-load-misses            #    0.06% of all L1-dcache accesses   ( +- 51.67% )  (71.38%)
    <not supported>      LLC-loads                                                             
    <not supported>      LLC-load-misses                                                       
 
-           0.95450 +- 0.00227 seconds time elapsed  ( +-  0.24% )
+           0.96855 +- 0.00418 seconds time elapsed  ( +-  0.43% )
 

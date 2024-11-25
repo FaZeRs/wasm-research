@@ -1,22 +1,22 @@
-# started on Mon Nov 25 17:15:49 2024
+# started on Mon Nov 25 17:20:03 2024
 
 
  Performance counter stats for '/home/nauris/.nvm/versions/node/v23.3.0/bin/node index.js' (10 runs):
 
-            237.16 msec task-clock                       #    1.004 CPUs utilized               ( +-  0.28% )
-                58      context-switches                 #  244.558 /sec                        ( +-  4.45% )
-                 0      cpu-migrations                   #    0.000 /sec                      
-             2,635      page-faults                      #   11.111 K/sec                       ( +-  0.21% )
-       988,558,144      cycles                           #    4.168 GHz                         ( +-  0.28% )  (71.58%)
-        73,182,189      stalled-cycles-frontend          #    7.40% frontend cycles idle        ( +-  3.57% )  (71.28%)
-     3,621,326,775      instructions                     #    3.66  insn per cycle            
-                                                  #    0.02  stalled cycles per insn     ( +-  0.10% )  (71.50%)
-       864,741,168      branches                         #    3.646 G/sec                       ( +-  0.10% )  (71.86%)
-         3,098,585      branch-misses                    #    0.36% of all branches             ( +-  0.55% )  (71.93%)
-     1,107,289,766      L1-dcache-loads                  #    4.669 G/sec                       ( +-  0.08% )  (71.33%)
-         1,304,218      L1-dcache-load-misses            #    0.12% of all L1-dcache accesses   ( +-  0.75% )  (71.02%)
+            238.20 msec task-clock                       #    1.002 CPUs utilized               ( +-  0.31% )
+                64      context-switches                 #  268.682 /sec                        ( +-  7.72% )
+                 3      cpu-migrations                   #   12.594 /sec                        ( +- 49.45% )
+             2,640      page-faults                      #   11.083 K/sec                       ( +-  0.16% )
+       992,464,646      cycles                           #    4.167 GHz                         ( +-  0.31% )  (71.45%)
+        70,678,519      stalled-cycles-frontend          #    7.12% frontend cycles idle        ( +-  1.03% )  (71.43%)
+     3,629,475,786      instructions                     #    3.66  insn per cycle            
+                                                  #    0.02  stalled cycles per insn     ( +-  0.09% )  (70.80%)
+       865,818,291      branches                         #    3.635 G/sec                       ( +-  0.14% )  (71.73%)
+         3,091,613      branch-misses                    #    0.36% of all branches             ( +-  0.93% )  (72.21%)
+     1,105,746,627      L1-dcache-loads                  #    4.642 G/sec                       ( +-  0.13% )  (71.77%)
+         1,329,539      L1-dcache-load-misses            #    0.12% of all L1-dcache accesses   ( +-  1.24% )  (71.32%)
    <not supported>      LLC-loads                                                             
    <not supported>      LLC-load-misses                                                       
 
-          0.236167 +- 0.000708 seconds time elapsed  ( +-  0.30% )
+           0.23769 +- 0.00102 seconds time elapsed  ( +-  0.43% )
 
