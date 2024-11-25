@@ -1,3 +1,6 @@
+include ../.env
+export
+
 build:
 	g++ main.cpp -o main -O3 -std=c++23
 run:

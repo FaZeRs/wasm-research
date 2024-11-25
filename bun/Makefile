@@ -1,3 +1,6 @@
+include ../.env
+export
+
 run:
 	bun index.ts
 benchmark:

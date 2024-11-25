@@ -1,6 +1,9 @@
+include ../.env
+export
+
 build:
-	wasm-pack build --target nodejs
+	wasm-pack build --release --target nodejs
 run:
-	node index.js 
+	$(shell command -v node) index.js 
 benchmark:
-	perf stat -r 10 -o perf.txt -d node index.js
+	perf stat -r 10 -o perf.txt -d $(shell command -v node) index.js

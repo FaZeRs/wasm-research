@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <stdio.h>
 
 int fibonacci(const int n) {
@@ -8,7 +9,8 @@ int fibonacci(const int n) {
 }
 
 int main() {
-  const int n = 40;
+  const char *n_str = std::getenv("FIBONACCI_N");
+  const int n = n_str ? std::atoi(n_str) : 40;
   const int result = fibonacci(n);
   printf("Fibonacci(%d) = %d\n", n, result);
   return 0;

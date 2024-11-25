@@ -31,6 +31,7 @@ node_metrics = parse_perf_output('./nodejs/perf.txt')
 bun_metrics = parse_perf_output('./bun/perf.txt')
 rust_metrics = parse_perf_output('./rust/perf.txt')
 rust_wasm_metrics = parse_perf_output('./rust-wasm/perf.txt')
+deno_metrics = parse_perf_output('./deno/perf.txt')
 
 # Collect metrics for all benchmarks
 benchmarks = {
@@ -45,6 +46,7 @@ benchmarks = {
     'node-api': node_api_metrics,
     'node': node_metrics,
     'bun': bun_metrics,
+    'deno': deno_metrics,
 }
 
 # Metrics to plot
@@ -63,10 +65,11 @@ for benchmark_name, metrics in benchmarks.items():
 # fig, ax = plt.subplots(len(metrics_to_plot), 1, figsize=(10, 15))
 
 for i, metric in enumerate(metrics_to_plot):
-    plt.figure(figsize=(8, 6))
+    plt.figure(figsize=(16, 6))
     plt.bar(benchmark_names, data[metric])
     plt.title(metric)
     plt.ylabel('Count' if metric not in ['task-clock'] else 'Seconds')
     plt.xlabel('Benchmark')
     plt.tight_layout()
-    plt.show()
+    plt.savefig(f'{metric}.png', dpi=300)
+    plt.close()

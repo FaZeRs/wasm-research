@@ -1,3 +1,6 @@
+include ../.env
+export
+
 build:
 	rustc -O --edition 2021 main.rs
 run:

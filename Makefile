@@ -18,5 +18,6 @@ benchmark:
 	make -C node-api benchmark
 	make -C nodejs benchmark
 	make -C bun benchmark
+	make -C deno benchmark
 	make -C rust benchmark
 	make -C rust-wasm benchmark

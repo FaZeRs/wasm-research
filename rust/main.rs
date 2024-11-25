@@ -6,7 +6,10 @@ fn fibonacci(n: u32) -> u32 {
 }
 
 fn main() {
-    let n = 40;
+    let n = std::env::var("FIBONACCI_N")
+        .unwrap_or("40".to_string())
+        .parse::<u32>()
+        .unwrap();
     let result = fibonacci(n);
     println!("Fibonacci({}) = {}", n, result);
 }
