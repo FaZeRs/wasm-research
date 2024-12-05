@@ -1,0 +1,42 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:wasm": "cd src/cpp-wasm && ./build.sh",
+    "build:napi": "node-gyp --python=python3 rebuild",
+    "clean:napi": "node-gyp --python=python3 clean",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "next": "15.0.3",
+    "node-addon-api": "^8.3.0",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@types/bindings": "^1.5.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/webpack-env": "^1.18.5",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "node-gyp": "^10.3.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "wasm-loader": "^1.3.0"
+  },
+  "binary": {
+    "module_name": "visibility_graph",
+    "module_path": "./build/Release/",
+    "host": "https://your-host.com/binaries/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "remote_path": "."
+  }
+}
